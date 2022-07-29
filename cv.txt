@@ -10,7 +10,7 @@
 	<banner> </banner>
 	<new-release> </new-release>
 	<your-choice> Lựa chọn hôm nay </your-choice>
-	<favorite-artist>nghệ sĩ yêu thích </favorite-artist>
+	<favorite-artist>nghệ sĩ yêu thích </favorite-artist>   (Tuấn)
 	<zing-chart> </zing-char>
 	<artists> các nghệ sĩ </artists>
 	<top-100> </top-100>
