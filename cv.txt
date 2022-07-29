@@ -18,7 +18,7 @@
 	<XONE'S CORNER> </>
 	<Radio>Radio nổi bật <Radio>
 	<event> sự kiện <sự kiện>
-	<footer> foot </footer>
+	<footer> foot </footer>  (Tuấn)
 </main>
   
   
