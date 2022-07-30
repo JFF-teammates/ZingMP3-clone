@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import './assets/main.css';
 
 import NavLeft from './components/NavLeft';
 import NavRight from './components/NavRight';
