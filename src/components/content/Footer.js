@@ -3,6 +3,7 @@ import React from "react";
 export default function Footer() {
     return (
         <div className="footer">
+            <p>Footer</p>
         <div className="footer__item">
             <div className="footer__item-icon">
             <i className="fas fa-search" />

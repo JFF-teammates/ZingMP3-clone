@@ -3,6 +3,7 @@ import React from "react";
 export default function RankChart() {
     return (
         <div className="rank-chart">
+            <p>RankChart</p>
         <div className="rank-chart__item">
             <div className="rank-chart__item-icon">
             <i className="fas fa-search" />
