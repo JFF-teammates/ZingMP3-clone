@@ -1,0 +1,278 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --fade_color_input: #c0c0c05c;
+    --hover_color_violet: #9d1b9d;
+    --hover_fade_color_silver: #535353ae;
+    --thoi_luong_nhac :0%;
+    --am_luong : 0 %;
+}
+
+.playing_bar{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+
+    background-color:  rgb(25, 0, 25);
+    cursor: pointer;
+
+    height: 88px;
+    width: 100%;
+}
+
+.playing_bar .music_info{
+    display: flex;
+    padding: 10px 0 0 20px;
+    height: fit-content;
+    box-sizing: border-box;
+    width: fit-content;
+}
+
+.playing_bar .music_info img{
+    display: inline-block;
+    border-radius: 5px;
+    height: 65px;
+}
+
+.playing_bar .music_info .wrap_title{
+    display: inline-block;
+    margin: auto;
+    margin-left: 8px;
+}
+
+.playing_bar .music_info .wrap_title h1,p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.playing_bar .music_info .wrap_title h1{
+    display: inline;
+    color: white;
+    font-size: 16px;
+}
+
+.playing_bar .music_info .wrap_title p{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.639);
+    font-size: 14px;
+}
+
+.playing_bar .music_info .wrap_title p:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--hover_color_violet);
+    color: var(--hover_color_violet);
+}
+
+.add_to_library{
+    width: 72px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add_to_library .wrap_icon{
+    height: 16px;
+}
+
+.add_to_library .icon_add_to_library{
+    height: 100%;
+    fill: white;
+}
+
+.bar_for_playing{
+    display: flex;
+    width: 477px;
+    flex-direction: column;
+}
+
+.subbar_for_playing.top{
+    display: flex;
+    margin: 15px auto 8px;
+}
+
+.subbar_for_playing.top .wrap_icon{
+    height: 20px;
+    width: fit-content;
+    margin: auto 10px;
+}
+
+.subbar_for_playing.top .wrap_icon.step{
+    height: 23px;
+    padding: 4px;
+}
+
+.subbar_for_playing.top .icon_bar_for_playing{
+    height: 100%;
+    fill: white;
+}
+
+.subbar_for_playing.top .wrap_icon.pause{
+    height: 38px;
+    padding: 0;
+}
+
+.subbar_for_playing.top .icon_bar_for_playing.pause{
+    height: 38px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.subbar_for_playing.top .icon_bar_for_playing.pause:hover{
+    fill: var(--hover_color_violet);
+    background-color: transparent;
+}
+
+.subbar_for_playing.bottom{
+    display: flex;
+    width: 100%;
+    margin: 0px auto 10px;
+}
+
+.subbar_for_playing.bottom span{
+    font-size: 12.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.subbar_for_playing.bottom input{
+    background: linear-gradient(to right, white 0%, white var(--thoi_luong_nhac), var(--fade_color_input) 0%, var(--fade_color_input) 100%);
+    border-radius: 8px;
+    height: 3px;
+    width: 30vw;
+    margin: auto 8px;
+    appearance: none;
+    transform: scaleY(1);
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+
+.subbar_for_playing.bottom input:hover{
+    transform: scaleY(1.8);
+    border-radius: 10px;
+}
+
+.subbar_for_playing.bottom input::-webkit-slider-thumb {
+    appearance: none;
+    transform: scaleY(1);
+    transition: transform 0.1s;
+    position: relative;
+    top: -0.2px;
+}
+
+.subbar_for_playing.bottom input:hover::-webkit-slider-thumb{
+    background-color: white;
+    
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    transform: scaleX(1.8);
+}
+
+.options{
+    display: flex;
+    align-items: center;
+}
+
+.options .wrap_icon{
+    fill: white;
+    height: 15px;
+    width: fit-content;
+    margin: 0 5px;
+}
+
+.options .icon_options{
+    height: 100%;
+}
+
+.options .wrap_icon.mv{
+    cursor: not-allowed;
+}
+
+.wrap_icon.speaker_input{
+    display: flex;
+    height: 31px;
+    padding: 5px 0;
+}
+
+.wrap_icon.speaker_input .wrap_icon.speaker{
+    height: 100%;
+    margin: 0 3px 0 0;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.wrap_icon.speaker_input .icon.speaker{
+}
+
+.wrap_icon.speaker_input input{
+    background: linear-gradient(to right, white 0%, white var(--am_luong), var(--fade_color_input) 0%, var(--fade_color_input) 100%);
+    border-radius: 8px;
+    height: 4px;
+    width: 70px;
+    padding: 0;
+    margin: auto 0px;
+    appearance: none;
+    transform: scaleY(1);
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+
+.wrap_icon.speaker_input:hover > input{
+    transform: scaleY(1.2);
+    border-radius: 10px;
+}
+
+.wrap_icon.speaker_input input::-webkit-slider-thumb{
+    appearance: none;
+    transform: scaleY(1); 
+    transition: transform 0.1s;
+    position: relative;
+    top: -0.2px;
+}
+
+.wrap_icon.speaker_input:hover ::-webkit-slider-thumb{
+    background-color: white;
+    
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    transform: scaleX(1.2);
+}
+
+.options #cross{
+    height: 37px;
+    margin: 0 15px 0 20px;
+    border-left: 1px silver solid;
+}
+
+.options :nth-child(6){
+    background-color: #3f3f3fae;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.wrap_icon{
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.wrap_icon .icon_bar_for_playing.pause{
+    padding: 0;
+}
+
+.wrap_icon:hover{
+    background-color:  var(--hover_fade_color_silver);
+}
+
+.options .wrap_icon.speaker_input{
+    background-color: transparent;
+}
+
+.bar_for_playing .subbar_for_playing.top .wrap_icon.pause:hover{
+    background-color: transparent;
+}

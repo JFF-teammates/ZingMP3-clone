@@ -1,0 +1,160 @@
+:root{
+    font-weight: 700;
+    color: white;
+    line-height: 1.5;
+    font-size: 13px;
+    font-family:  Inter,sans-serif;
+    --width-nav-left: 240px;
+    --background-color-nav-left: #231B2E;
+}
+body{
+    margin: 0;
+    background-color: #170F23;
+    overflow-y: hidden;
+}
+
+.nav-left{
+    display:block !important;
+    position: fixed;
+    height: 100%;
+    width: var(--width-nav-left);
+    background-color: var(--background-color-nav-left);
+}
+.nav-left-item{
+    height: 38px;
+    list-style: none;
+    padding-left: 28px;
+}
+.nav-left-logo{
+    background-image: url('/logo.svg');
+    background-repeat: no-repeat;
+    background-size: 120px 40px;
+    background-position: 28px 12px;
+    height: 75px;                
+}
+.nav-left-menu{
+    margin: 0 0;
+    padding-left: 0;
+}
+.nav-left-menu div{
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: 0 1;
+    width: 100%;
+    padding-left: 35px;
+    padding-top: 5px;
+    
+}  
+.click-list-active{
+padding-top: 0px !important;
+padding-left: 0px !important;
+background-color: #393243;
+}
+.nav-left-foot-login,.nav-left-banner{
+margin-top: 10px;
+margin-left: 20px;
+background-color: #7200A1;
+width: 200px;
+height: 105px;
+border: 1px black solid;
+border-radius: 10px;
+box-sizing: border-box;
+}
+.nav-left-banner{
+border: 1px black solid;
+background-image: linear-gradient(117deg,#5a4be7,#c86dd7 102%);
+}
+.text{
+text-align: center;
+padding-top: 15px;
+font-size: 12px;
+padding-left: 7px;
+padding-right: 7px;
+}
+.nav-left-foot-login .button, .nav-left-banner .button-2{
+font-size: 13px;
+width: 144px;
+height: 25px;
+border: 1px white solid;
+background-color: #7200A1;
+border-color: white;
+border-radius: 20px;
+margin-top: 10px;
+margin-left: 28px;
+padding-top: 5px;
+text-align: center;
+}
+.nav-left-banner .button-2{
+color: black;
+font-size: 13px;
+width: 150px;
+background-color: #FFDB00;
+margin-top: 10px;
+}
+.nav-left-new-playlist{
+border-top: 1px #393243 solid;
+margin-top: 10px ;
+font-size: 16px;
+text-align: center;
+padding-top: 10px;
+}
+.nav-left-main_2{
+    margin-top: 20px;
+}
+
+/* Phía dưới là code css Main */
+.main{
+    margin-left: var(--width-nav-left);
+    border:1px #ffdd0000 solid;
+    box-sizing: border-box;
+}
+.main-content{
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 600px;
+    
+}
+.foot-logo-doitac{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    justify-content: center;
+    margin-top: 27.5px;
+    margin-left: 20px;
+    margin-right: 15px;
+    box-sizing: border-box;
+    
+}
+.foot-logo-doitac-e{
+    align-items: center;
+    width: 115px;
+    height: 65px;
+    background-color: #F7F7F7;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+.foot-text{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1.71px;
+    font-weight: 700;
+    color:#FFFFFF80;
+    padding-top: 2px;
+}
+.doitac{
+    text-align: center;
+    
+    align-items: center;
+    
+}
+.size-dt{
+    width: 65px;
+    
+}
