@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PlayingBar(props) {
     return (
-        <div className="playing-bar">
+        <div className="playing-bar h-1/6">
             <p>PlayingBar</p>
         <div className="playing-bar__progress-bar">
             <div className="playing-bar__progress-bar-fill" />

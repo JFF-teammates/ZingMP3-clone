@@ -10,10 +10,12 @@ import Content from './components/content/Content';
 
 function App() {
   return (
-    <div className="App">
-     <NavLeft />
-      <Content/>
-      <NavRight />
+    <div className="App h-full">
+      <div className='flex w-full h-5/6 '>
+      <NavLeft/>
+      <Content  />
+      <NavRight/>
+      </div>
       <PlayingBar />
     </div>
   );

@@ -8,7 +8,7 @@ import ListMusicBottom from "./ListMusicBottom";
 
 export default function Content() {
   return (
-    <div className="content">
+    <div className="content w-9/12">
       <div className="bg-green-300">
       <SearchBar />
       <ListMusicTop />
