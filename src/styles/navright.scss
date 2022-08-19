@@ -1,0 +1,58 @@
+.nav-right {
+    background-color: darkorchid;
+    width:368px !important;
+    padding-left: 8px;
+    background-color: #170f23;
+border: solid 1px hsl(0deg 0% 100% / 10%);
+border-width: 0;
+border-left-width: 1px;
+padding-top:5px;
+}
+.topMenu{
+    display: flex;
+margin:14px 0px;
+align-items: center;
+}
+.topMenu >i{
+    font-size: 15px;
+    width:31px;
+    height:31px;
+    padding-top: 8px;
+    background-color:hsl(0deg 0% 100% / 10%);
+color:#fff;
+cursor: pointer;
+
+border-radius: 50%;
+}
+.bakmenu{
+    display: inline-flex;
+    border-radius: 912px;
+    background-color:hsl(0deg 0% 100% / 10%);
+    padding: 3px 4px;
+    align-items: center;
+font-size: 12px;
+justify-content: center;
+flex-grow: 1;
+}
+.bakmenu>span{
+    padding:5px 0px;
+    border-radius: 12px;
+    flex-grow: 1;
+cursor: pointer;
+ color:#dadada;
+    text-align: center;
+}
+.bakmenu>span:first-child{
+    margin-right: 2px;
+}
+.bakmenu>span:last-child{
+    margin-left: 2px;
+}
+.bakmenu>.focusList{
+    background-color:hsl(0deg 0% 100% / 30%);
+    color:#fff;
+
+}
+.k12l{
+    margin:0 5px;
+}

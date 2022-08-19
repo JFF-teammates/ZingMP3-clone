@@ -1,0 +1,46 @@
+[33mcommit e1809bd7706152ca238c50b22622998dce832215[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: thanhngan22 <nganbui9a2017@gmail.com>
+Date:   Sat Aug 6 17:38:43 2022 +0700
+
+    :star2: add playing bar
+    
+    Co-authored-by: NguyÃễn Anh TuÃấn <matrinh33@gmail.com>
+    Co-authored-by: LeeMinHo <leeminhovn2k4@gmail.com>
+
+[33mcommit 6ac3737f8e3e694367ffb298ce5cb0d9842ac338[m
+Author: thanhngan22 <nganbui9a2017@gmail.com>
+Date:   Sat Aug 6 17:01:40 2022 +0700
+
+    :star2: working on searchbar
+    
+    Co-authored-by: leeminhovn leeminhovn2k4@gmail.com
+
+[33mcommit fff7b7d30fc822be5657dbeb54796cfd684a3714[m
+Author: thanhngan22 <nganbui9a2017@gmail.com>
+Date:   Wed Aug 3 13:36:14 2022 +0700
+
+    feat: :zap: update divide components
+
+[33mcommit 7bce0c304e6c7dec21e2b2e1ceb259b87b8d9029[m
+Author: thanhngan22 <nganbui9a2017@gmail.com>
+Date:   Sat Jul 30 11:24:56 2022 +0700
+
+    feat: :sparkles: add tailwindcss to project
+
+[33mcommit 51a3f9785fd9b352317b5f682b1b895931a1cd55[m
+Author: thanhngan22 <nganbui9a2017@gmail.com>
+Date:   Sat Jul 30 10:46:53 2022 +0700
+
+    feat: :zap: edit favicon, add styles
+
+[33mcommit 771169bdce16d71f69ae15032f598dd272ab5d3f[m
+Author: thanhngan22 <nganbui9a2017@gmail.com>
+Date:   Sat Jul 30 00:39:10 2022 +0700
+
+    feat: :tada: setup branch 'master' and init project with React
+
+[33mcommit 4c6f591fd1eea9b7625f2ef76b286359dd7f9a94[m
+Author: thanhngan22 <nganbui9a2017@gmail.com>
+Date:   Fri Jul 29 17:25:46 2022 +0700
+
+    Initialize project using Create React App
