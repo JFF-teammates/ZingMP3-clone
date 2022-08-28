@@ -1,11 +1,13 @@
 .nav-left {
-    background-color: bisque;
+    background-color: hsla(0,0%,100%,0.05);
+    width: 270px !important;
 }
 
 
 body{
     padding: 0;
     margin: 0;
+    background-color: #170f23;
 }
 
 :root{
@@ -380,4 +382,197 @@ body{
     bottom: -5px;
     left: 40%;
     transform: rotate(45deg);
+}
+.logoWeb{
+    margin-top:2px;
+    width:120px;
+    margin-bottom: 10px;
+    height: 40px;
+    display: block;
+    background-image: url(https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg);
+    background-repeat: no-repeat;
+    height: 65px;
+   background-position:center ;
+background-size:contain ;
+    cursor: pointer;
+    margin-left:27px;
+    cursor:pointer
+}
+.LinkListIteam{
+    position: relative;
+    display:block;
+    color:#dadada;
+    font-weight: 700;
+    padding: 7px 29px;
+    font-size: 14px;
+    text-align: left;
+text-transform: capitalize;
+}
+.LinkListIteam::before{
+    content:'';
+    display: none;
+position: absolute;
+height:100%;
+top:0;
+left:0;
+width:3px;
+background-color:#7200a1;
+
+}
+.nav-left__item{
+    position:relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+ .nav-left__item>.LinkListIteam:nth-child(5)::after{
+    content:'LIVE';
+position:absolute;
+display:flex;
+top:50%;
+transform: translateY(-50%);
+width: 34px;
+height:16px;
+color:white;
+background-color: #ff0a0a;
+font-size: 10px;
+letter-spacing: 0.5px;
+left: 50%;
+
+justify-content: center;
+align-items: center;
+border-radius: 3px;
+}
+.LinkListIteam:hover{
+    color:#c662ef;
+    background-color: #393243;
+}
+.LinkListIteam:hover::before{
+    display: block;
+}
+.LinkListIteam>i{
+    font-size:20px;
+margin-right:10px;
+}
+.listBottomRoute{
+    overflow-y: scroll;
+padding-top:14px;
+position:relative;
+flex-grow:1;
+}
+.listBottomRoute
+.listBottomRoute>.LinkListIteam>i{
+    transform: translateY(2px);
+}
+.listBottomRoute::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+}
+.listBottomRoute::-webkit-scrollbar{
+width:4px;
+}
+.listBottomRoute::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.listBottomRoute:hover::-webkit-scrollbar-thumb{
+    background:hsl(0deg 0% 100% / 30%);
+
+}
+.listBottomRoute::-webkit-scrollbar-thumb{
+border-radius: 4px;
+
+}
+.listBottomRoute--seperate{
+    height: 1px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+    box-shadow: -3px 2px 14px 17px #231b2e;
+    
+    overflow-x: hidden;
+}
+.listBottomRoute--seperate::after{
+    content:'';
+    position: absolute;
+    display: inline-block;
+    width: 80%;
+    height: 1px;
+    background-color: hsla(0,0%,100%,0.05);
+    top: 50%;
+  left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.cardShow--navLeft{
+padding: 18px 8px;
+    border-radius: 8px;
+    margin: 10px 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #7200a1;
+}
+.cardShow--navLeft--update{
+    
+    background-image: linear-gradient(117deg,#5a4be7,#c86dd7 102%);
+}
+
+.cardShow--navLeft>.dangnhapTITLE,
+.cardShow--navLeft>.TitleUpdate{
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.cardShow--navLeft>.dangnhapButton,
+.cardShow--navLeft>.titleButton{
+    padding: 0px 35px;
+    padding-top: 5px;
+    padding-bottom:2px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 15px;}
+.cardShow--navLeft>.dangnhapButton{
+    border:solid 1px #fff;
+    color: white;
+    background-color: hsl(0deg 0% 100% / 10%);
+
+}
+.cardShow--navLeft>.titleButton{
+    color:black;
+    background-color: #ffdb00;
+    border: solid 1px #ffdb00;
+}
+    .cardShow--navLeft>.dangnhapButton:hover{
+        opacity:0.8;
+    }
+    .AppBackground{
+        height: 100%;
+    }
+.createPlayList{
+    color: #fff;
+    min-height:54px;
+    padding:0px 25px;
+    border:solid 1px hsl(0deg 0% 100% / 10%);
+    display: flex;
+    align-items: center;
+cursor: pointer;
+font-weight: 700;
+}
+
+.createPlayList:hover{
+    color:rgb(207 201 201)
+}
+.createPlayList>i{
+    transform: translateY(2px);
+    margin-right:10px;
+}
+.titleButton:hover{
+    opacity:0.8;
+}
+.unBox{
+    box-shadow: 0 0 transparent !important;
 }

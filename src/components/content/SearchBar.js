@@ -17,17 +17,24 @@ const[state,dispatch]=useReducer(reducer,{type:'other',payload:''})
 
 <section className={"search-bar_left_backgroundInput" + (state=='focus'?' focusTrue':'')}>
 <i className="fa-solid fa-magnifying-glass"></i>
-       
-        <input onBlur={()=>{dispatch({type:'other',payload:''})}}
-        onFocus={()=>{dispatch({type:'focus',payload:''})}}
-          value={value}
-           onChange={(e)=>setValue(e.target.value)} 
-            className="search-bar__input"
-            type="text"
-            placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát...
-            "
-            
+
+
+
+<input
+onBlur={()=>{dispatch({type:'other',payload:''})}}
+onFocus={()=>{dispatch({type:'focus',payload:''})}}
+onChange={(e)=>setValue(e.target.value)} 
+
+type="text"
+placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..."
+value={value}
+className="search-bar__input"
+           
         />
+
+
+
+
        {value? <i onClick={()=>{setValue('')}} className="fa-solid fa-xmark deleteText"></i>:''}
         <ReusltList />
 </section>
@@ -64,17 +71,17 @@ var Title=({text})=>{
 var ReusltList=()=>{
     return <ul className="resultList">
      <h3>Đề xuất cho bạn</h3>
-     <a href="#" target="_blank"><i className="fa-regular fa-star"></i>
+     <a href="#" target="_blank"><i className="fa-solid fa-arrow-trend-up"></i>
  karaoke    </a>
-     <a href="#" target="_blank"><i className="fa-regular fa-star"></i>
+     <a href="#" target="_blank"><i className="fa-solid fa-arrow-trend-up"></i>
 XONE Radio     </a>
-     <a href="#" target="_blank"><i className="fa-regular fa-star"></i>
+     <a href="#" target="_blank"><i className="fa-solid fa-arrow-trend-up"></i>
   Podcast   </a>
-     <a href="#" target="_blank"><i className="fa-regular fa-star"></i>
+     <a href="#" target="_blank"><i className="fa-solid fa-arrow-trend-up"></i>
  #zingchart    </a>
-     <a href="#" target="_blank"><i className="fa-regular fa-star"></i>
+     <a href="#" target="_blank"><i className="fa-solid fa-arrow-trend-up"></i>
   zing choce   </a>
-     <a href="#" target="_blank"><i className="fa-regular fa-star"></i>
+     <a href="#" target="_blank"><i className="fa-solid fa-arrow-trend-up"></i>
    workout  </a>
      
     </ul>

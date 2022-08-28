@@ -3,7 +3,7 @@
     display:flex;
     height: 70px;
     align-items: center;
-    padding:0 34px;
+    padding:0 59px;
     position: relative;
     background: #170f23;
 }
@@ -19,16 +19,17 @@
     font-size: 20px;
   }
   .search-bar_left_navigate>i{
-    padding-right:20px;
+    padding-right:25px;
    color:#fff;
     opacity:0.5;
   }
   
   .search-bar_left_backgroundInput{
     background:green;
-    width: 100%;
+    width: 48%;
     position:absolute;
     top:15px;
+    margin-left:30px;
     left:110px;
     max-width:540px;
     padding:5px 10px;
