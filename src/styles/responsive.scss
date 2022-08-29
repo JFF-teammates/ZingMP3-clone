@@ -3,7 +3,7 @@
 .searchBar-right>li:nth-child(3){
 display: none;
 }
-.search-bar{
+.content{
     padding:0 29px; 
  }
 }
@@ -14,6 +14,14 @@ display: none;
     background-color: hsl(262, 27%, 18%) !important;
 z-index: 3;  
 }
+.nav-left__item{
+    padding-bottom: 55px;
+}
+.listBottomRoute--seperate{
+    background-color:#2a213a ;
+    box-shadow: -3px 2px 14px 17px #2a213a;
+
+}
     /*.nav-left--close*/
 .nav-left--close{
 
@@ -23,7 +31,7 @@ z-index: 3;
         width: 100%;
         margin:0;
         background-image: url('https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.7.26/static/media/icon_zing_mp3_60.f6b51045.svg');
-        height: 75px;
+        min-height: 75px;
         background-size: 45px;
         background-position: center 10px;
     }
@@ -47,7 +55,7 @@ z-index: 3;
 }
 
 width:70px !important;
-
+ 
 }
 .createPlayList{
     width: 40px;
@@ -71,13 +79,12 @@ width:70px !important;
         left:50%;
         transform: translateX(-50%);
     }
+   
 }
 .cardShow--navLeft{
     display:none;
 }
-.listBottomRoute{
-    overflow-y: hidden;
-}
+
 }
 /*handel 80%*/
 
