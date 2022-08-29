@@ -16,7 +16,7 @@ const[state,dispatch]=useReducer(reducer,{type:'other',payload:''})
 </section>
 
 <section className={"search-bar_left_backgroundInput" + (state=='focus'?' focusTrue':'')}>
-<i className="fa-solid fa-magnifying-glass"></i>
+<i className="fa-regular fa-magnifying-glass"></i>
 
 
 

@@ -13,10 +13,13 @@
     align-items:center;
     flex-grow: 1;
     height: 40px;
-    
+    padding-right: 10px;
   } 
   .search-bar_left i{
     font-size: 20px;
+  }
+  .search-bar_left_navigate{
+    min-width:85px;
   }
   .search-bar_left_navigate>i{
     padding-right:25px;
@@ -26,38 +29,46 @@
   
   .search-bar_left_backgroundInput{
     background:green;
-    width: 48%;
-    position:absolute;
-    top:15px;
-    margin-left:30px;
-    left:110px;
+    position:relative;
     max-width:540px;
     padding:5px 10px;
     padding-right: 20px;
     border-radius:20px;
-  min-width:304px;  
-  
+flex-grow: 1;  
   background-color: hsla(0,0%,100%,0.1);
 color: white;
   }
   .focusTrue{
     background-color: #432275;
+border-radius: 20px 20px 0px 0px;
+
   }
 
   .search-bar_left_backgroundInput>input:focus ~ul{
   display: block;
+  position: absolute;
+  background-color: #432275;
+  left:0;
+  padding:10px;
+  right:0;
+border-radius: 0 0 20px 20px;
+
   } 
-  .deleteText{
-    position: absolute;
-    right:0px;
-    cursor: pointer;
-  }
-    .search-bar_left_backgroundInput>i{
+  
+    .search-bar_left_backgroundInput>.fa-magnifying-glass{
       color:#dadada;
-      transform:translateY(4px);
+      transform: translateY(2px);
       margin-right:10px;
-    font-weight: 600;
     opacity: 0.9;
+    }
+    .deleteText{
+      color:#dadada;
+      margin-right:10px;
+
+      position: absolute;
+      right:10px;
+      cursor: pointer;
+      transform: translateY(4px);
     }
     .search-bar_left_backgroundInput>i:hover{
       opacity:0.8;
@@ -88,8 +99,8 @@ opacity: 0.9;
   margin-right: 10px;
   font-size: 17px;
   background-color:  hsla(0,0%,100%,0.1);
-  padding-top: 6px;
-  padding-right: 2px;
+  padding-top: 8px;
+  padding-left: 2px;
 color:white;
 cursor: pointer;
 position: relative;
@@ -152,15 +163,17 @@ font-weight: 750;
   display:block;
   text-align: left;
   padding:8px 10px;
+  border-radius: 10px;
 }
 .resultList>a:hover{
   background-color:hsla(0,0%,100%,0.1);
-  color:#c662ef;
+  color:#fff;
 }
 .resultList>a>i{
  font-size:14px;
  color:hsla(0,0%,100%,0.5);
  margin-right:10px;
+ 
 }
 .overlay_outMenu{
   position:fixed;

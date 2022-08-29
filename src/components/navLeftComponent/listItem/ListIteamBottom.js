@@ -22,7 +22,8 @@ const data2=[
 ]
 function RenderItem({count,children}){
     const get=data2[count];
-    return <Link className='LinkListIteam' to={get.toPath}><i className={get.icon}></i>{children}</Link>
+    return <Link className='LinkListIteam' to={get.toPath}><i className={get.icon}></i>
+    <span>{children}</span></Link>
 }
 
 function ListIteamBottom({setSeperate}){

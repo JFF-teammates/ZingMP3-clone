@@ -3,13 +3,23 @@
 }
 html{
   height: 100%;
+overflow: hidden;
 }
-
+html::-webkit-scrollbar-thumb{
+  background-color:green;
+  border-radius: 2px;
+}
+html::-webkit-scrollbar{
+  background-color:red;
+  width: 5px;
+}
 #root{
-  height:calc(100% - 88px);
+  height:100%;
+
 }
 .App {
   text-align: center;
+min-width:720px;
 }
 body{
   height:100% ;
@@ -59,4 +69,7 @@ body .App{
 
 .fa-chart-line-up::after{
   display:none;
+}
+.AppBackground {
+  height: calc(100% - 88px);
 }

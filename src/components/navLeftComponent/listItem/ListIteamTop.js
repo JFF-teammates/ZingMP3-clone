@@ -10,7 +10,8 @@ const data=[
 
 function RenderItem({count,children}){
     const get=data[count];
-    return <Link className='LinkListIteam' to={get.toPath}><i className={get.icon}></i>{children}</Link>
+    return <Link className='LinkListIteam' to={get.toPath}><i className={get.icon}></i>
+    <span>{children}</span></Link>
 }
 function ListIteamTop(){
 return data.map((element,index)=>{
