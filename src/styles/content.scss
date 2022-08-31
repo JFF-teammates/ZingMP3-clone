@@ -5,4 +5,9 @@
 
 .content{
     padding:0 59px;
+    display: flex;
+    flex-direction: column;
+}
+.mainContent{
+    height: 100%;
 }

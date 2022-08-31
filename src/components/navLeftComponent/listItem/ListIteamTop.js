@@ -1,4 +1,6 @@
+import { useContext } from 'react';
 import {Link} from 'react-router-dom'
+import {SetPath} from '../../NavLeft'
 const data=[
     {icon:'fa-solid fa-user-music',toPath:"ca-nhan",title:'cá nhân'},
     {icon:'fa-solid fa-circle-dashed',toPath:"/",title:"khám phá"},
@@ -8,14 +10,23 @@ const data=[
 
 ]
 
-function RenderItem({count,children}){
+function RenderItem({count,children,currentPath,setCurrentPath}){
+
     const get=data[count];
-    return <Link className='LinkListIteam' to={get.toPath}><i className={get.icon}></i>
+    const {toPath,icon}=get;
+
+    return <Link onClick={e=>{
+        setCurrentPath(toPath)}} className={'LinkListIteam '+(currentPath==toPath?
+        'LinkListIteam--focus':'')} to={toPath}><i className={icon}></i>
     <span>{children}</span></Link>
 }
 function ListIteamTop(){
+const [currentPath,setCurrentPath]=useContext(SetPath);
+
 return data.map((element,index)=>{
-    return <RenderItem count={index} key={index}>{element.title}</RenderItem>
+    return <RenderItem currentPath={currentPath}
+    setCurrentPath={setCurrentPath}
+     count={index} key={index}>{element.title}</RenderItem>
 })
 }
 export default ListIteamTop;

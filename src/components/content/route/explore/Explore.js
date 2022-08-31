@@ -1,3 +1,5 @@
+import { SliderPage } from "./Component/index"
 export default function Explore(){
-    return <h1>kham pha</h1>
+    return <SliderPage></SliderPage>
 }
+

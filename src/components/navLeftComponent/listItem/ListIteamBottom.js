@@ -1,5 +1,7 @@
 import {Link} from 'react-router-dom'
-import {useMemo} from'react'
+import {useContext} from'react';
+import {SetPath} from '../../NavLeft'
+
 function PostcardLogin(){
 
     return <div className='cardShow--navLeft'>
@@ -20,13 +22,19 @@ const data2=[
     {icon:'fa-thin fa-star',toPath:'top100',title:'top 100'},
     {icon:"fa-thin fa-photo-film-music",toPath:'/the-loai-video/Viet-Nam/IWZ9Z08I.html',title:'mv'},
 ]
-function RenderItem({count,children}){
+function RenderItem({count,children,currentPath,setCurrentPath}){
     const get=data2[count];
-    return <Link className='LinkListIteam' to={get.toPath}><i className={get.icon}></i>
+    const {toPath,icon}=get;
+
+    return <Link onClick={e=>{
+       
+        setCurrentPath(toPath) }} className={'LinkListIteam '+(currentPath==toPath?
+        'LinkListIteam--focus':'')} to={toPath}><i className={icon}></i>
     <span>{children}</span></Link>
 }
 
 function ListIteamBottom({setSeperate}){
+    const [currentPath,setCurrentPath]=useContext(SetPath);
 
    function handelScroll(e){
         if(e.target.scrollTop<=10){
@@ -42,7 +50,9 @@ function ListIteamBottom({setSeperate}){
     return <div onScroll={handelScroll}  className="listBottomRoute">
 
      {data2.map((element,index)=>{
-        return <RenderItem key={index} count={index} >{element.title}</RenderItem>
+        return <RenderItem currentPath={currentPath}
+        setCurrentPath={setCurrentPath}
+        key={index} count={index} >{element.title}</RenderItem>
     })}
     <PostcardLogin/>
     <PostcardUpdateVip/>

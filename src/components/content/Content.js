@@ -8,6 +8,8 @@ export default function Content() {
     <div className="content w-9/12">
       <div className="bg-green-300">
       <SearchBar />
+      </div>
+      <div className='mainContent'>
   <Routes>
   <Route path='/ca-nhan' element={<Individual/>}/>
   <Route path='/' element={<Explore/>}/>
@@ -20,7 +22,7 @@ export default function Content() {
   <Route path='/the-loai-video/Viet-Nam/IWZ9Z08I.html'
   element={<Mv/>} />
   </Routes>
-      </div>
+  </div>
     </div>
   );
 }

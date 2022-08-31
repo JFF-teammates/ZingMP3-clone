@@ -410,7 +410,8 @@ background-size:contain ;
     text-align: left;
 text-transform: capitalize;
 }
-.LinkListIteam::before{
+.LinkListIteam::before,
+.LinkListIteam--focus::before{
     content:'';
     display: none;
 position: absolute;
@@ -420,6 +421,9 @@ left:0;
 width:3px;
 background-color:#7200a1;
 
+}
+.LinkListIteam--focus::before{
+display: inline-block;
 }
 .nav-left__item{
     position:relative;
@@ -505,7 +509,7 @@ border-radius: 4px;
     display: inline-block;
     width: 80%;
     height: 1px;
-    background-color: hsla(0,0%,100%,0.05);
+    background-color:rgb(106, 106, 106);
     top: 50%;
   left:50%;
     transform: translate(-50%,-50%);
@@ -583,4 +587,7 @@ font-weight: 700;
 }
 .unBox{
     box-shadow: 0 0 transparent !important;
+}
+.LinkListIteam--focus{
+    background-color: #393243;
 }

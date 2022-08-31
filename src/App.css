@@ -5,14 +5,7 @@ html{
   height: 100%;
 overflow: hidden;
 }
-html::-webkit-scrollbar-thumb{
-  background-color:green;
-  border-radius: 2px;
-}
-html::-webkit-scrollbar{
-  background-color:red;
-  width: 5px;
-}
+
 #root{
   height:100%;
 
@@ -72,4 +65,53 @@ body .App{
 }
 .AppBackground {
   height: calc(100% - 88px);
+}
+.swiper {
+  width: 100%;
+  height: 300px;
+  position: relative;
+
+}
+
+.swiper-wrapper{
+  position: absolute !important;
+}
+.swiper-button-prev,
+.swiper-button-next{
+  
+  display: none !important;
+  position: absolute;
+  background-color: hsl(0deg 0% 100% / 10%);
+  width:50px !important;
+  height:50px !important;
+  font-weight: 500;
+  
+box-shadow: 1px 1px 2px 1px rgba(0,0,0.0.5) !important;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+}
+.swiper-button-prev::after{
+  --editPosition:1.5px;
+}
+.swiper-button-prev::after{
+  --editPosition:-1.5px;
+
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  color:white;
+  font-size: 17px !important;
+  font-weight: 600;
+  transform: translateX(var(--editPosition));
+}
+
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next{
+display:flex !important;
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active{
+  opacity:0.9;
 }
