@@ -66,12 +66,7 @@ body .App{
 .AppBackground {
   height: calc(100% - 88px);
 }
-.swiper {
-  width: 100%;
-  height: 300px;
-  position: relative;
 
-}
 
 .swiper-wrapper{
   position: absolute !important;
@@ -114,4 +109,25 @@ display:flex !important;
 .swiper-button-prev:active,
 .swiper-button-next:active{
   opacity:0.9;
+}
+.swiper-scrollbar{
+  position: absolute;
+  bottom:0;
+ }
+ .swiper-scrollbar-drag{
+  background-color: rgba(255,255,255,0.3) !important;
+cursor: pointer; 
+}
+.swiper{
+  height: auto;
+  min-height: 227px;
+  margin-top: -38px;
+  margin-top:-10px;
+}
+.swiper-slide{
+  display: flex;
+  align-items: center;
+}
+img{
+  display: inline-block;
 }
